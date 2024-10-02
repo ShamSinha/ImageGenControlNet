@@ -85,6 +85,29 @@ In [aspect_ratio.ipynb](/aspect_ratio.ipynb), it was demonstrated that for a giv
 one with an aspect ratio of 1:1 and the other with an aspect ratio close to 16:9.
 
 
+## Reducing Generation Latency
+
+In this [reducing generation latency](/reducing_generation_latency.ipynb) notebook, we demonstrate methods to quickly reduce generation latency. The image below was generated with the default number of inference steps (i.e., 50) and default resolution, taking 3.36 seconds to produce. 
+
+<img src="./outputs/original_latency.png" alt="Logo" width="300"/>
+
+
+
+One way to reduce generation time is by decreasing the number of inference steps in the Stable Diffusion pipeline. In this case, the generation time was reduced to 2.1 seconds. 
+
+<img src="./outputs/reduce_inference_steps.png" alt="Logo" width="300"/>
+
+
+
+Another approach is to reduce the resolution of the generated output image, which resulted in a generation time of 2.7 seconds. 
+
+<img src="./outputs/reduce_resolution.png" alt="Logo" width="300"/>
+
+From a visual inspection, we can conclude that reducing latency also reduces the quality of the generated image.
+
+
+
+
 
 
 
