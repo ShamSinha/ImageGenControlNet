@@ -18,18 +18,60 @@ Also normalized input depth image to (0,255)
 2. Resize all depth images to a standard size of 512x512xch pixels to ensure uniform input to the model and ease of comparison across various images. Using this fixed size simplifies the processing pipeline.
 3. Convert depth image to normals, then use ControlNet pipeline to apply depth conditioning followed by normals conditioning for improved generation.
 
-
-text_prompts = ["beautiful landscape, mountains in the background",
-"luxury bedroom interior",
-"Beautiful snowy mountains",
-"luxurious bedroom interior",
-"walls with cupboard",
-"room with chair",
-"House in the forest"]
+-----------------
 
 ### beautiful landscape, mountains in the background
-![logo](./outputs/depth_canny_normal_0.png)
+-----------------
+<img src="./outputs/depth_canny_normal_0.png" alt="Logo" width="500"/>
+<img src="./outputs/depth_output_0.png" alt="Logo" width="250"/>
+<img src="./outputs/depth_comparison_0.png" alt="Logo" width="400"/>
 
+-----------------
+### luxury bedroom interior
+<img src="./outputs/depth_canny_normal_1.png" alt="Logo" width="500"/>
+<img src="./outputs/depth_output_1.png" alt="Logo" width="250"/>
+<img src="./outputs/depth_comparison_1.png" alt="Logo" width="400"/>
+
+-----------------
+
+### Beautiful snowy mountains
+<img src="./outputs/depth_canny_normal_2.png" alt="Logo" width="500"/>
+<img src="./outputs/depth_output_2.png" alt="Logo" width="250"/>
+<img src="./outputs/depth_comparison_2.png" alt="Logo" width="400"/>
+
+-----------------
+
+
+### luxurious bedroom interior
+<img src="./outputs/depth_canny_normal_3.png" alt="Logo" width="500"/>
+<img src="./outputs/depth_output_3.png" alt="Logo" width="250"/>
+<img src="./outputs/depth_comparison_3.png" alt="Logo" width="400"/>
+
+-----------------
+
+
+### walls with cupboard
+<img src="./outputs/depth_canny_normal_4.png" alt="Logo" width="500"/>
+<img src="./outputs/depth_output_4.png" alt="Logo" width="250"/>
+<img src="./outputs/depth_comparison_4.png" alt="Logo" width="400"/>
+
+-----------------
+
+
+### room with chair
+<img src="./outputs/depth_canny_normal_5.png" alt="Logo" width="500"/>
+<img src="./outputs/depth_output_5.png" alt="Logo" width="250"/>
+<img src="./outputs/depth_comparison_5.png" alt="Logo" width="400"/>
+
+-----------------
+
+
+### House in the forest
+<img src="./outputs/depth_canny_normal_6.png" alt="Logo" width="500"/>
+<img src="./outputs/depth_output_6.png" alt="Logo" width="250"/>
+<img src="./outputs/depth_comparison_6.png" alt="Logo" width="400"/>
+
+-----------------
 
 
 
