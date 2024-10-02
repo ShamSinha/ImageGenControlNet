@@ -87,11 +87,24 @@ See [final_pipeline.ipynb](/final_pipeline.ipynb) for the final output.
 
 ## Aspect ratio 
 
-In [aspect_ratio.ipynb](/aspect_ratio.ipynb), it was demonstrated that for a given text prompt, we have two different depth images: 
+In [aspect_ratio.ipynb](/aspect_ratio.ipynb) notebook, 
+it was demonstrated that for a given text prompt, we have two different depth images: 
 one with an aspect ratio of 1:1 and the other with an aspect ratio close to 16:9.
 
 Yes we can generate different aspect ratio image from Stable Diffusion.
 
+This is 1:1 aspect ratio image
+<img src="./outputs/aspect_ratio_1_1.png" alt="Logo" width="700"/>
+
+This is 16:9 aspect ratio image
+<img src="./outputs/aspect_ratio_16_9.png" alt="Logo" width="800"/>
+
+
+The Stable Diffusion model is optimized for generating images with a 1:1 aspect ratio. In this case, a 1:1 aspect ratio depth image was created from an original 16:9 aspect ratio depth image. As a result, there is no distortion or weird output, since the image was not stretched or compressed—only cropped.
+
+Cropping a depth image from 16:9 to 1:1 typically results in a more focused and condensed output, but it may reduce the richness and context of the generated image by removing peripheral details.
+
+In this instance, the 1:1 aspect ratio output appears more detailed compared to the 16:9 aspect ratio output.
 
 
 
@@ -99,7 +112,7 @@ Yes we can generate different aspect ratio image from Stable Diffusion.
 
 In this [reducing generation latency](/reducing_generation_latency.ipynb) notebook, we demonstrate methods to quickly reduce generation latency. The image below was generated with the default number of inference steps (i.e., 50) and default resolution, taking 3.36 seconds to produce. 
 
-<img src="./outputs/original_latency.png" alt="Logo" width="300"/>
+
 
 
 
