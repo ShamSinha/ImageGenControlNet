@@ -8,7 +8,7 @@ In [notebook_02.ipynb](/notebook_02.ipynb) tried mutliple pipelines different co
 
 Some input depth images, such as 168x168 or 177x177, result in distorted outputs, sometimes even generating NSFW content. 
 Additionally, a depth image with a resolution of 2668x2668 produces very noisy outputs. 
-Therefore, we decided to resize all inputs to a standard size of 512x512.
+Therefore, decided to resize all inputs to a standard size of 512x512.
 
 Also normalized input depth image to (0,255)
 
