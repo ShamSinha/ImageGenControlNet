@@ -19,6 +19,20 @@ Also normalized input depth image to (0,255)
 3. Convert depth image to normals, then use ControlNet pipeline to apply depth conditioning followed by normals conditioning for improved generation.
 
 
+text_prompts = ["beautiful landscape, mountains in the background",
+"luxury bedroom interior",
+"Beautiful snowy mountains",
+"luxurious bedroom interior",
+"walls with cupboard",
+"room with chair",
+"House in the forest"]
+
+### beautiful landscape, mountains in the background
+![logo](./outputs/depth_canny_normal_0.png)
+
+
+
+
 Also extracted depth from generated output using [Monocular depth estimation](https://huggingface.co/docs/transformers/en/tasks/monocular_depth_estimation) and verified visually.
 It is visually almost same. 
 
