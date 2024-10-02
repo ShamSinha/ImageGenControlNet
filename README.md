@@ -20,6 +20,11 @@ Also normalized input depth image to (0,255)
 
 -----------------
 
+Here for each text prompt, provide three set of images
+- one is input depth image, canny edge image follwed by normal image extracted from given depth image.
+- generated output image
+- comparison shown between input depth image vs depth image extracted from generated output image
+
 ### beautiful landscape, mountains in the background
 -----------------
 <img src="./outputs/depth_canny_normal_0.png" alt="Logo" width="500"/>
