@@ -21,7 +21,7 @@ Also normalized input depth image to (0,255)
 -----------------
 
 Here for each text prompt, provide three set of images
-- one is input depth image, canny edge image follwed by normal image extracted from given depth image.
+- one is input depth image, canny edge image followed by normal image extracted from given depth image.
 - generated output image
 - comparison shown between input depth image vs depth image extracted from generated output image
 
@@ -85,9 +85,14 @@ It is visually almost same.
 
 See [final_pipeline.ipynb](/final_pipeline.ipynb) for the final output.
 
+## Aspect ratio 
 
 In [aspect_ratio.ipynb](/aspect_ratio.ipynb), it was demonstrated that for a given text prompt, we have two different depth images: 
 one with an aspect ratio of 1:1 and the other with an aspect ratio close to 16:9.
+
+Yes we can generate different aspect ratio image from Stable Diffusion.
+
+
 
 
 ## Reducing Generation Latency
