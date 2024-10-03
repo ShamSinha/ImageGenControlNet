@@ -1,3 +1,5 @@
+# ImageGenControlNet
+
 In [notebook_02.ipynb](/notebook_02.ipynb) tried mutliple pipelines different combination of control net conditioning such as :
 - depth
 - depth, canny
